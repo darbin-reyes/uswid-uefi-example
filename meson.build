@@ -23,7 +23,7 @@ sbom_static += configure_file(
   configuration : conf,
 )
 
-# we import this into EVERY BUILT SBoM component to override values
+# we import this into EVERY BUILT SBOM component to override values
 ini_toplevel = configure_file(
   input : 'toplevel.ini',
   output : 'toplevel.ini',

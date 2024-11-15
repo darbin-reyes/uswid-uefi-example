@@ -3,7 +3,7 @@
 First I think it makes sense to define what we want, and why we need it before working out what
 we’ve already got, and what we need to add.
 
-To me, the purpose of an SBoM is so that the user knows *what* components make up the software
+To me, the purpose of an SBOM is so that the user knows *what* components make up the software
 deliverable, and gives them information on *who* built each part.
 I don’t think it has to include the *how* or the *why*, as the questions we need to answer are
 things like “what version of OpenSSL is included” and “do I trust all the companies contributing
@@ -44,7 +44,7 @@ To identify each component we need two things – an ID – which allows us to c
 from other components, and also a version.
 I think we should all get a lot better about versioning components using semantic versions – and
 also bumping the major/minor/micro numbers much more frequently.
-This makes the SBoM more interesting, and more importantly makes the security analysis and VEX
+This makes the SBOM more interesting, and more importantly makes the security analysis and VEX
 tagging possible in the future. We also need to be strict about namespacing, e.g. if the AMI
 `CryptoDxe.efi` is a different thing from the EDK2 `CryptoDxe.efi` then either the former or latter
 needs an identifier, e.g. using the “persistent ID” in uSWID nomenclature of something like
@@ -70,7 +70,7 @@ munge something like this:
       BaseMemoryLib
       HobLib
 
-…and then generate a lot of the needed SBoM data automatically. It doesn’t tell us about any
+…and then generate a lot of the needed SBOM data automatically. It doesn’t tell us about any
 entities (the *who*, which we’ll need to actually research and add for each module) but we can add
 a lot of extra detail automatically.
 For example the tree hash, aka the “git describe” SHA1 which uSWID refers to as the “edition”, and

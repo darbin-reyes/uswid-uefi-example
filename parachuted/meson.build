@@ -43,5 +43,5 @@ sbom_static += files('fwupdx64.efi')
 #
 # NOTE: in real world firmware this needs to be embedded as a zlib-compressed blob (e.g. using
 # the --compress flag in uswid) -- but I left it uncompressed here to show the "magic" uSWID
-# header and the plaintext SBoM data
+# header and the plaintext SBOM data
 sbom_static += files('ec-firmware.bin')

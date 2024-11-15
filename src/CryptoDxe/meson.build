@@ -12,7 +12,7 @@ ini_supplemental = configure_file(
   configuration : conf,
 )
 
-# convert the EDK2 inf file to an uSWID ini SBoM file
+# convert the EDK2 inf file to an uSWID ini SBOM file
 env = environment()
 env.set('SRCDIR', meson.current_source_dir())
 env.set('BUILDDIR', meson.current_build_dir())
