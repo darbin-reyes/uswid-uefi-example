@@ -1,0 +1,43 @@
+[
+  {
+    "lang": "en-US",
+    "tag-id": "bcbd84ff-9898-4922-8ade-dd4bbe2e40ba",
+    "software-name": "MCU 06-03-02",
+    "software-version": "20230808",
+    "version-scheme": "decimal",
+    "software-meta": [
+      {
+        "product": "CPU"
+      }
+    ],
+    "payload": [
+      {
+        "file": [
+          {
+            "fs-name": "intel-ucode-06-03-02",
+            "size": 12,
+            "hash": [
+              1,
+              "a948904f2f0f479b8f8197694b30184b0d2ed1c1cd2a1ec0fb85d299a192a447"
+            ]
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "date": "2023-09-15T12:34:56"
+      }
+    ],
+    "entity": [
+      {
+        "entity-name": "Intel Corporation",
+        "reg-id": "com.intel",
+        "role": [
+          "tagCreator",
+          "softwareCreator"
+        ]
+      }
+    ]
+  }
+]
