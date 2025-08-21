@@ -63,3 +63,5 @@ FMMT -a BIOS.rom <GUID> SbomSection.ffs BIOS_with_Sbom.rom
 
 
 https://github.com/spdx/spdx-examples/tree/master/software/example1
+
+https://spdx.github.io/spdx-spec/v3.0.1/model/Software/Classes/Sbom/
