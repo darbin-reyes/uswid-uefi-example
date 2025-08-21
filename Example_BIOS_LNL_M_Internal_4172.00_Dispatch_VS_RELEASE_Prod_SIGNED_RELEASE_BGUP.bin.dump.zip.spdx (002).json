@@ -1,6 +1,17 @@
-{
+[{
 	"spdxVersion": "SPDX-2.2",
 	"dataLicense": "CC0-1.0",
+	    "software-version": "20230808",
+		    "entity": [
+      {
+        "entity-name": "Intel Corporation",
+        "reg-id": "com.intel",
+        "role": [
+          "tagCreator",
+          "softwareCreator"
+        ]
+      }
+    ],
 	"name": "BIOS_LNL_M_Internal_4172.00_Dispatch_VS_RELEASE_Prod_SIGNED_RELEASE_BGUP.bin.dump.zip",
 	"SPDXID": "SPDXRef-DOCUMENT",
 	"documentNamespace": "https://spdx.org/spdxdocs/BIOS_LNL_M_Internal_4172.00_Dispatch_VS_RELEASE_Prod_SIGNED_RELEASE_BGUP.bin.dump.zip-c4b80295-8387-48cc-807b-d1bde2e767e1",
@@ -97,7 +108,7 @@
 			"relationshipType": "CONTAINS",
 			"spdxElementId": "SPDXRef-package-d4f8f36a-38b5-4417-8f57-56b66cc71122",
 			"relatedSpdxElement": "SPDXRef-package-0f697eb5-b99b-45ab-afff-a5336604cab7"
-		},
+		}
 	],
 	"files": [
 		{
@@ -116,4 +127,4 @@
 			]
 		}
 	]
-}
+}]

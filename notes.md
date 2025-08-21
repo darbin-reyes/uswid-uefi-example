@@ -39,3 +39,27 @@ def _detect_format(filepath: str) -> Optional[Any]:
         return uSwidFormatPkgconfig()
     return None
 ```
+
+
+##############
+
+
+To add an SBOM (Software Bill of Materials) to a UEFI BIOS .rom file, you typically follow these steps:
+
+1. Generate the SBOM
+Use a tool like syft, CycloneDX, or SPDX tools to generate an SBOM file (usually in JSON or XML format) for your firmware build.
+2. Convert SBOM to a UEFI Section or FFS File
+Use EDK2 tools to wrap the SBOM file into a UEFI section or FFS (Firmware File System) file:
+Use GenSec to create a RAW or user interface section:
+Optionally, use GenFfs to create an FFS file:
+Replace <GUID> with a unique GUID for your SBOM.
+3. Insert the SBOM Section/FFS into the BIOS Image
+Use a tool like FMMT or UEFITool to insert the SBOM section or FFS file into the appropriate place in the .rom file.
+Example with FMMT:
+
+
+
+FMMT -a BIOS.rom <GUID> SbomSection.ffs BIOS_with_Sbom.rom
+
+
+https://github.com/spdx/spdx-examples/tree/master/software/example1
